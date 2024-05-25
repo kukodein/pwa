@@ -3,7 +3,7 @@
 	"id": "kukode-orderku",
 	"name": "OrderKu",
 	"short_name": "orderku",
-	"start_url": "/index.html",
+	"start_url": "index.html",
 	"description": "Aplikasi Pesanan Mandiri Online",
 	"display": "standalone",
 	"background_color": "#ffffff",
