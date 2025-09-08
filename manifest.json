@@ -1,10 +1,10 @@
 {
 	"lang": "id-ID",
-	"id": "kukode-orderku",
-	"name": "OrderKu",
-	"short_name": "orderku",
-	"start_url": "index.html",
-	"description": "Aplikasi Pesanan Mandiri Online",
+	"id": "hybrid-pwa",
+  "name": "PWA Hybrid Demo",
+  "short_name": "HybridPWA",
+  "start_url": "index.html",
+	"description": "Contoh Cache Asset (Cache Storage) + simpan data API (IndexedDB)",
 	"display": "standalone",
 	"background_color": "#ffffff",
 	"theme_color": "#007bff",
@@ -17,31 +17,16 @@
 	"categories": [
 		"books"
 	],
-	"icons": [
-	{
-		"src": "image/icon/icon-72.png",
-		"sizes": "72x72",
-		"type": "image/png"
-	},
-	{
-		"src": "image/icon/icon-96.png",
-		"sizes": "96x96",
-		"type": "image/png"
-	},
-	{
-		"src": "image/icon/icon-144.png",
-		"sizes": "144x144",
-		"type": "image/png"
-	},
-	{
-		"src": "image/icon/icon-192.png",
-		"sizes": "192x192",
-		"type": "image/png"
-	},
-	{
-		"src": "image/icon/icon-512.png",
-		"sizes": "512x512",
-		"type": "image/png"
-	}
-	]
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
