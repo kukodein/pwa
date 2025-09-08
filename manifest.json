@@ -3,20 +3,14 @@
 	"id": "hybrid-pwa",
   "name": "PWA Hybrid Demo",
   "short_name": "HybridPWA",
-  "start_url": "index.html",
+  "start_url": "./",
+  "scope": "./",
 	"description": "Contoh Cache Asset (Cache Storage) + simpan data API (IndexedDB)",
 	"display": "standalone",
 	"background_color": "#ffffff",
 	"theme_color": "#007bff",
 	"orientation": "portrait",
 	"dir": "ltr",
-	"display_override": [
-		"browser",
-		"window-controls-overlay"
-	],
-	"categories": [
-		"books"
-	],
   "icons": [
     {
       "src": "icons/icon-192.png",
