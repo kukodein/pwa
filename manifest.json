@@ -1,43 +1,71 @@
 {
 	"lang": "id-ID",
 	"id": "hybrid-pwa",
-  "name": "PWA Hybrid Demo",
-  "short_name": "HybridPWA",
-  "start_url": "https://lab.kukode.com/pwa",
-  "scope": "https://lab.kukode.com/pwa",
+	"name": "PWA Hybrid Demo",
+	"short_name": "HybridPWA",
+	"start_url": "https://lab.kukode.com/pwa",
+	"scope": "https://lab.kukode.com/pwa",
 	"description": "Contoh Cache Asset (Cache Storage) + simpan data API (IndexedDB)",
 	"display": "standalone",
 	"background_color": "#ffffff",
 	"theme_color": "#007bff",
 	"orientation": "portrait",
 	"dir": "ltr",
-  "icons": [
-    {
-      "src": "icons/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "icons/icon-1024.png",
-      "sizes": "1024x1024",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
-  ],
-	"screenshots" : [
-	  {
-	    "src": "screenshot.jpg",
-	    "sizes": "1280x720",
-	    "type": "image/jpg",
-	    "platform": "wide"
-	  }
+	"icons": [
+		{
+			"src": "icons/icon-192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "icons/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "icons/icon-1024.png",
+			"sizes": "1024x1024",
+			"type": "image/png",
+			"purpose": "maskable"
+		}
 	],
-	"categories": ["games", "finance", "navigation"]
+	"screenshots" : [
+		{
+			"src": "screenshot.jpg",
+			"sizes": "1280x720",
+			"type": "image/jpg",
+			"platform": "wide"
+		}
+	],
+	"categories": ["games", "finance", "navigation"],
+	"shortcuts": [
+		{
+			"name": "Offline",
+			"url": "/offline.html",
+			"description": "An offline page."
+		}
+	],
+	"launch_handler": {
+		"client_mode": ["navigate-existing", "auto"]
+	},
+	"protocol_handlers": [
+		{
+			"protocol": "offline",
+			"url": "/offline.html"
+		}
+	],
+	"prefer_related_applications": false,
+	"related_applications": [
+		{
+			"id": "com.kukode.lab",
+			"platform": "windows",
+			"url": "https://lab.kukode.com"
+		}
+	],
+	"iarc_rating_id": "e58c174a-81d2-5c3c-32cc-34b8de4a52e9",
+	"note_taking": {
+		"new_note_url": "/offline.html"
+	}
 }
