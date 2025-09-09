@@ -1,10 +1,14 @@
 // =======================================
 // Service Worker Registration
 // =======================================
+
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js")
-    .then(() => console.log("✅ Service Worker registered"))
-    .catch(err => console.error("❌ SW registration failed:", err));
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("./sw.js")
+      .then(reg => console.log("✅ Service Worker registered:", reg))
+      .catch(err => console.error("❌ SW registration failed:", err));
+  });
 }
 
 // =======================================
